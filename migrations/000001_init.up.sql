@@ -24,7 +24,8 @@ CREATE TABLE todo_items
 (
     id          serial       not null unique,
     title       varchar(255) not null,
-    description boolean      not null default false
+    description varchar(255),
+    done        boolean      not null default false
 );
 
 CREATE TABLE lists_items
